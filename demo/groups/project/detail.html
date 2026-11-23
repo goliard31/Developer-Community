@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目详情页 · 社区项目站</title>
+  <meta name="description" content="项目详情页 Demo：项目文件、图文教程与视频教程（内容占位）。">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+  <div class="site-top" id="top">
+
+    <div class="demo-banner">
+      <strong>Demo 预览</strong>
+      <span>视觉风格参照 discourse.org（2026.11.23 起取代线框样式）· 文案与项目数据均为占位 · 纯静态 HTML，非最终技术实现</span>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a class="site-logo" href="../../index.html" aria-label="社区项目站 · 首页">
+          <svg class="site-logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+            <defs>
+              <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7b5fe2"/>
+                <stop offset="1" stop-color="#503281"/>
+              </linearGradient>
+            </defs>
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#logoGradient)"/>
+            <path d="M12 12h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H20l-5 4v-4h-3a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2z" fill="#fff"/>
+          </svg>
+          <span class="site-logo__text">社区项目站</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <ul class="nav-list">
+            <li><a href="../../index.html">首页</a></li>
+            <li class="nav-item--has-child">
+              <button type="button" class="nav-link nav-link--has-child" aria-expanded="false">关于</button>
+              <ul class="nav-sub">
+                <li><a href="../../index.html#about">认识社区</a></li>
+                <li><a href="#" title="占位">社区动态（占位）</a></li>
+                <li><a href="#" title="占位">加入我们（占位）</a></li>
+              </ul>
+            </li>
+            <li><a href="../../index.html#groups">开发组</a></li>
+            <li><a href="#" title="占位">资源（占位）</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <a class="btn btn--primary btn--sm" href="#" title="占位">加入社区</a>
+          <button type="button" class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+            <span class="nav-toggle__bars"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+  </div>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="面包屑">
+          <a href="../../index.html">首页</a><span class="breadcrumb__sep">›</span><a href="../project.html">项目组</a><span class="breadcrumb__sep">›</span><a href="showcase.html">项目展示页</a><span class="breadcrumb__sep">›</span><span class="breadcrumb__current">项目详情页</span>
+        </nav>
+        <h1 class="page-hero__title">示例项目详情页（占位）</h1>
+        <p class="page-hero__desc">本页为项目详情页 Demo 示例：包含项目文件、图文教程、视频教程三类内容，均可缺项。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">项目文件 · Files</span>
+          <h2 class="section__title">项目文件</h2>
+          <p class="section__sub">文件列表占位 · 待提供（下载行为待确认）。</p>
+        </div>
+        <div class="card file-list">
+          <div class="file-row">
+            <span class="file-row__icon file-row__icon--file">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </span>
+            <span class="file-row__name">README.md（占位）</span>
+            <span class="file-row__meta">2 KB · 2026.11.23（占位）</span>
+            <a class="btn btn--xs" href="#" title="占位">下载（占位）</a>
+          </div>
+          <div class="file-row">
+            <span class="file-row__icon file-row__icon--file">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </span>
+            <span class="file-row__name">演示文稿.pdf（占位）</span>
+            <span class="file-row__meta">1.2 MB · 2026.11.23（占位）</span>
+            <a class="btn btn--xs" href="#" title="占位">下载（占位）</a>
+          </div>
+          <div class="file-row">
+            <span class="file-row__icon file-row__icon--folder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <span class="file-row__name">资料文件夹（占位）</span>
+            <span class="file-row__meta">目录 · 待提供</span>
+            <a class="btn btn--xs" href="#" title="占位">打开（占位）</a>
+          </div>
+        </div>
+        <p class="empty-note">说明：无文件时该区显示空状态（可缺项）。</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">图文教程 · Articles</span>
+          <h2 class="section__title">图文教程</h2>
+          <p class="section__sub">教程内容占位 · 待提供。</p>
+        </div>
+        <div class="tutorial">
+          <article class="card tutorial__step">
+            <div class="tutorial__shot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>教程配图占位 · 待提供</span>
+            </div>
+            <h3>第 1 步：标题占位</h3>
+            <p>教程正文占位 · 待提供：这里放图文步骤说明。</p>
+          </article>
+          <article class="card tutorial__step">
+            <div class="tutorial__shot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>教程配图占位 · 待提供</span>
+            </div>
+            <h3>第 2 步：标题占位</h3>
+            <p>教程正文占位 · 待提供：这里放图文步骤说明。</p>
+          </article>
+        </div>
+        <p class="empty-note">说明：无教程时该区显示空状态（可缺项）。</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">视频教程 · Video</span>
+          <h2 class="section__title">视频教程</h2>
+          <p class="section__sub">视频占位 · 待提供（正式版替换为真实播放器）。</p>
+        </div>
+        <div class="video-box">
+          <div class="video-box__center">
+            <button type="button" class="video-box__play" aria-label="播放视频（占位）">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </button>
+          </div>
+          <div class="video-box__controls" aria-hidden="true">
+            <span class="video-box__ctrl"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg></span>
+            <span class="video-box__ctrl"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg></span>
+            <span class="video-box__ctrl"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14"/></svg></span>
+          </div>
+          <div class="video-box__progress" aria-hidden="true"></div>
+        </div>
+        <p class="video-box__note">视频占位 · 16:9 · 待提供（正式版替换为真实播放器）；无视频时该区显示空状态（可缺项）。</p>
+        <div class="cta-row">
+          <a class="btn btn--secondary" href="showcase.html">返回项目展示页</a>
+          <a class="btn btn--primary" href="../project.html">返回项目组主页 <span class="btn__arrow">›</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <a class="site-footer__logo" href="../../index.html" aria-label="社区项目站 · 首页">
+            <svg class="site-logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#logoGradient)"/>
+              <path d="M12 12h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H20l-5 4v-4h-3a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2z" fill="#fff"/>
+            </svg>
+            <span class="site-logo__text">社区项目站</span>
+          </a>
+          <p class="site-footer__tagline">集中展示各开发组项目的社区站点（介绍文案占位 · 待提供）。</p>
+          <div class="social-row">
+            <a href="#" title="社交账号占位" aria-label="社交账号占位 1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+            <a href="#" title="社交账号占位" aria-label="社交账号占位 2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" title="社交账号占位" aria-label="社交账号占位 3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+            <a href="#" title="社交账号占位" aria-label="社交账号占位 4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></a>
+            <a href="#" title="社交账号占位" aria-label="社交账号占位 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h6>社区</h6>
+          <ul class="site-footer__list">
+            <li><a href="../../index.html">首页</a></li>
+            <li><a href="../../index.html#about">认识社区</a></li>
+            <li><a href="#" title="占位">社区动态（占位）</a></li>
+            <li><a href="#" title="占位">联系我们（占位）</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>开发组</h6>
+          <ul class="site-footer__list">
+            <li><a href="../project.html">项目组</a></li>
+            <li><a href="../rd.html">研发组</a></li>
+            <li><a href="../design.html">设计组</a></li>
+            <li><a href="showcase.html">项目展示页</a></li>
+            <li><a href="detail.html">项目详情页</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>资源</h6>
+          <ul class="site-footer__list">
+            <li><a href="#" title="占位">资源中心（占位）</a></li>
+            <li><a href="#" title="占位">常见问题（占位）</a></li>
+            <li><a href="#" title="占位">社区公约（占位）</a></li>
+          </ul>
+        </div>
+        <div>
+          <h6>法律</h6>
+          <ul class="site-footer__list">
+            <li><a href="#" title="占位">法律声明（占位）</a></li>
+            <li><a href="#" title="占位">隐私政策（占位）</a></li>
+            <li><a href="#" title="占位">版权信息（占位）</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© 2026 社区项目站（占位） · 内容与素材均为占位，Demo 非最终技术实现</span>
+        <a href="#top">返回顶部 ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../main.js" defer></script>
+</body>
+</html>
