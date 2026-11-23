@@ -32,6 +32,8 @@
 | 2.2 | 首个注册用户为管理员 | 已完成 | `lib/db.ts` 注册逻辑 |
 | 2.3 | 管理员种子脚本（admin / abc123） | 已完成 | `scripts/seed-admin.mjs` |
 | 2.4 | 登录态注入全站（头部入口、未登录拦截上传页） | 已完成 | `app/layout.tsx`、`app/upload/page.tsx` |
+| 2.5 | 头部「退出登录」入口（桌面按钮 + 移动端菜单内全宽按钮，2026.11.23 追加） | 已完成 | `components/SiteHeader.tsx`、`components/LogoutButton.tsx`；点击后清 cookie 跳首页，`/dashboard` 需重新登录 |
+| 2.6 | 修复移动端菜单白底白字（深色 hero 上面板链接不可见） | 已完成 | `app/globals.css` `.nav-open` 规则 |
 
 ## 阶段 3：上传与文件系统（已完成）
 

@@ -74,6 +74,10 @@ body {
   .nav-toggle__bars { @apply relative w-5 h-[2px] bg-ink before:absolute before:content-[''] before:w-5 before:h-[2px] before:bg-ink before:-top-[6px] after:absolute after:content-[''] after:w-5 after:h-[2px] after:bg-ink after:top-[6px]; }
   .nav-open .site-nav { @apply block absolute left-0 right-0 top-full bg-white border-b border-line shadow-strong px-4 py-3; }
   .nav-open .nav-list { @apply flex-col items-stretch gap-0; }
+  /* 移动端下拉面板是白底：即使头部还处于深色 hero 上的透明态，面板内文字也必须是深色 */
+  .nav-open .site-header--transparent .nav-list a,
+  .nav-open .site-header--transparent .nav-link,
+  .nav-open .site-header--transparent .site-logo { @apply text-ink; }
 
   /* ---------- 按钮 ---------- */
   .btn { @apply inline-flex items-center justify-center gap-1.5 rounded-round font-bold text-md px-4 py-2.5 no-underline transition-all duration-150 cursor-pointer border; }
