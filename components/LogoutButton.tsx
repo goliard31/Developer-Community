@@ -4,14 +4,14 @@ import { useRouter } from 'next/navigation';
 import { Icon } from './Icon';
 import { useState } from 'react';
 
-export function LogoutButton() {
+export function LogoutButton({ className = 'btn btn--ghost btn--sm' }: { className?: string }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
 
   return (
     <button
       type="button"
-      className="btn btn--ghost btn--sm"
+      className={className}
       disabled={busy}
       onClick={async () => {
         setBusy(true);

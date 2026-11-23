@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Icon } from './Icon';
+import { LogoutButton } from './LogoutButton';
 import type { PublicUser } from '@/lib/db';
 
 export function SiteHeader({ user }: { user: PublicUser | null }) {
@@ -84,6 +85,13 @@ export function SiteHeader({ user }: { user: PublicUser | null }) {
               <li>
                 <Link href="/#latest">项目</Link>
               </li>
+              {user && (
+                <li className="desktop:hidden">
+                  <div className="px-3 py-2">
+                    <LogoutButton className="btn btn--ghost btn--sm w-full" />
+                  </div>
+                </li>
+              )}
             </ul>
           </nav>
 
@@ -97,6 +105,7 @@ export function SiteHeader({ user }: { user: PublicUser | null }) {
                   <Icon name="user" className="w-4 h-4" /> {user.displayName}
                   {user.role === 'admin' && <span className="badge badge--admin ml-1">管理员</span>}
                 </Link>
+                <LogoutButton className="btn btn--ghost btn--sm hidden desktop:inline-flex" />
               </>
             ) : (
               <>
